@@ -1,13 +1,13 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 566eb67573dd3164aa51970c6e29a4eb93f493e8b7de0f20cd90fe620cb8f5ba
+-- hash: e7c9d0fbea0eaeda520ee97b8ce29d13f1a2f1a518aa307f3e8ffa35fee15778
 
 name:           text-conversions
-version:        0.3.0
+version:        0.3.1
 synopsis:       Safe conversions between textual types
 description:    Safe conversions between textual types
 category:       Data
@@ -46,23 +46,3 @@ library
     , errors
     , text
   default-language: Haskell2010
-
-test-suite text-conversions-test-suite
-  type: exitcode-stdio-1.0
-  main-is: Main.hs
-  other-modules:
-      Data.Text.ConversionsSpec
-      Paths_text_conversions
-  hs-source-dirs:
-      test
-  default-extensions: FlexibleInstances MultiParamTypeClasses OverloadedStrings
-  ghc-options: -Wall -rtsopts -threaded -with-rtsopts=-N
-  build-depends:
-      base
-    , bytestring
-    , hspec
-    , text
-    , text-conversions
-  default-language: Haskell2010
-  build-tool-depends:
-      hspec-discovery:hspec-discovery

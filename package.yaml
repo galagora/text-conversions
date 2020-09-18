@@ -1,5 +1,5 @@
 name: text-conversions
-version: '0.3.0'
+version: '0.3.1'
 category: Data
 synopsis: Safe conversions between textual types
 description: Safe conversions between textual types
@@ -32,20 +32,20 @@ library:
   - errors
   - text
 
-tests:
-  text-conversions-test-suite:
-    source-dirs: test
-    main: Main.hs
-    ghc-options:
-    - -rtsopts
-    - -threaded
-    - -with-rtsopts=-N
-    dependencies:
-    - base
-    - text-conversions
-    - bytestring
-    - hspec
-    - text
-    verbatim: |
-      build-tool-depends:
-          hspec-discovery:hspec-discovery
+# tests:
+#   text-conversions-test-suite:
+#     source-dirs: test
+#     main: Main.hs
+#     ghc-options:
+#     - -rtsopts
+#     - -threaded
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - base
+#     - text-conversions
+#     - bytestring
+#     - hspec
+#     - text
+#     verbatim: |
+#       build-tool-depends:
+#           hspec-discovery:hspec-discovery
